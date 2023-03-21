@@ -9,10 +9,6 @@ export class TodoController {
 
   @Get('/todo')
   async getTodos(): Promise<Todo[]> {
-    this.todoService.getTodos();
-    this.todoService.getTodos();
-    this.todoService.getTodos();
-
     return await this.todoService.getTodos();
   }
 
